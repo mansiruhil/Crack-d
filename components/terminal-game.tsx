@@ -360,7 +360,7 @@ export default function TerminalGame() {
         setGamePhase("exploring")
         addLogWithEffect(`Welcome to crack'd, ${inputValue}!`, "fire")
         addLog("")
-        addLog("You enter the coding academy...")
+        addLog("You enter crack'd...")
         addLog("Six powerful Code Bosses guard different algorithm realms...")
         addLog("")
         addLog("Commands:")
