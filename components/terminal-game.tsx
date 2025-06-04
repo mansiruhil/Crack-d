@@ -68,8 +68,8 @@ export default function TerminalGame() {
     "║               CRACK'D                ║",
     "╚══════════════════════════════════════╝",
     "",
-    "Welcome to crack'd - Master coding through adventure",
-    "Type your coder name and press Enter...",
+    "Welcome to crack'd",
+    "Type your name and press Enter...",
   ])
   const [inputValue, setInputValue] = useState("")
   const [gamePhase, setGamePhase] = useState<"setup" | "exploring" | "battle" | "challenge">("setup")
