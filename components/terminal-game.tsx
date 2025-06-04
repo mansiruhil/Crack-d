@@ -68,7 +68,7 @@ export default function TerminalGame() {
     "║               CRACK'D                ║",
     "╚══════════════════════════════════════╝",
     "",
-    "Welcome to the CRACK'D",
+    "Welcome to crack'd - Master coding through adventure",
     "Type your coder name and press Enter...",
   ])
   const [inputValue, setInputValue] = useState("")
@@ -96,19 +96,19 @@ export default function TerminalGame() {
   const addLogWithEffect = (message: string, effect = "normal") => {
     switch (effect) {
       case "success":
-        addLog(`✅ ${message}`)
+        addLog(`[SUCCESS] ${message}`)
         break
       case "error":
-        addLog(`❌ ${message}`)
+        addLog(`[ERROR] ${message}`)
         break
       case "info":
-        addLog(`ℹ️  ${message}`)
+        addLog(`[INFO] ${message}`)
         break
       case "star":
-        addLog(`⭐ ${message}`)
+        addLog(`[REWARD] ${message}`)
         break
       case "fire":
-        addLog(`🔥 ${message}`)
+        addLog(`[EPIC] ${message}`)
         break
       default:
         addLog(message)
@@ -127,19 +127,19 @@ export default function TerminalGame() {
       weakness: "two-pointer technique",
       skillType: "arrays",
       ascii: [
-        "┌─────────────────────┐",
-        "│    ARRAY BEAST      │",
-        "│  [🔥][⚡][💀][🌟][💎]  │",
-        "│   ↑  ↓  ↑  ↓  ↑    │",
-        "│  [💀][🔥][⚡][🌟][💎]  │",
-        "│   ↓  ↑  ↓  ↑  ↓    │",
-        "│  [⚡][💎][🔥][💀][🌟]  │",
-        "└─────────────────────┘",
+        "┌──────────────────────────┐",
+        "│    ARRAY BEAST           │",
+        "│  [A][B][C][D][E]         │",
+        "│   ↑  ↓  ↑  ↓  ↑         │",
+        "│  [F][G][H][I][J]         │",
+        "│   ↓  ↑  ↓  ↑  ↓         │",
+        "│  [K][L][M][N][O]         │",
+        "└──────────────────────────┘",
       ],
       dialogue: [
-        "My arrays are unsorted chaos",
+        "My arrays are unsorted chaos!",
         "Can you find the pattern in my elements?",
-        "Two pointers won't save you",
+        "Two pointers won't save you!",
       ],
     },
     {
@@ -152,7 +152,7 @@ export default function TerminalGame() {
       weakness: "palindrome detection",
       skillType: "strings",
       ascii: [
-        "🐲 STRING DRAGON 🐲",
+        "STRING DRAGON",
         '   "ROAR ROAR"      ',
         "  /           \\     ",
         " /  Palindrome \\    ",
@@ -178,14 +178,14 @@ export default function TerminalGame() {
       weakness: "tree traversal",
       skillType: "trees",
       ascii: [
-        "🌳 BINARY TREE TITAN 🌳",
+        "BINARY TREE TITAN",
         "        ┌───┐           ",
-        "        │ 👑 │           ",
+        "        │ R │           ",
         "     ┌──┴───┴──┐        ",
         "  ┌──┴──┐   ┌──┴──┐     ",
-        "  │ ⚔️  │   │ 🛡️  │     ",
+        "  │  S  │   │  T  │     ",
         "┌─┴─┐ ┌─┴─┐ ┌─┴─┐ ┌─┴─┐ ",
-        "│🔥 │ │⚡ │ │💎 │ │🌟 │ ",
+        "│ A │ │ B │ │ C │ │ D │ ",
         "└───┘ └───┘ └───┘ └───┘ ",
       ],
       dialogue: [
@@ -204,7 +204,7 @@ export default function TerminalGame() {
       weakness: "graph traversal",
       skillType: "graphs",
       ascii: [
-        "👹 GRAPH GIANT 👹",
+        "GRAPH GIANT",
         "    A ──── B      ",
         "   /│\\    /│\\     ",
         "  / │ \\  / │ \\    ",
@@ -232,14 +232,14 @@ export default function TerminalGame() {
       weakness: "efficient sorting",
       skillType: "sorting",
       ascii: [
-        "🧙‍♂️ SORTING SORCERER 🧙‍♂️",
+        "SORTING SORCERER",
         "  [9][2][7][1][5][8]   ",
         "   ↓  ↓  ↓  ↓  ↓  ↓   ",
-        "  ✨ CHAOS MAGIC ✨    ",
+        "  --- CHAOS MAGIC ---  ",
         "   ↓  ↓  ↓  ↓  ↓  ↓   ",
         "  [?][?][?][?][?][?]   ",
         "                       ",
-        "  🔮 ORDER FROM CHAOS  ",
+        "  ORDER FROM CHAOS     ",
       ],
       dialogue: [
         "My elements dance in chaotic disorder!",
@@ -257,14 +257,14 @@ export default function TerminalGame() {
       weakness: "binary search",
       skillType: "searching",
       ascii: [
-        "🔍 SEARCHING SAGE 🔍",
+        "SEARCHING SAGE",
         "  [1][3][5][7][9][11]  ",
         "   ↑           ↑      ",
         "  Low         High     ",
         "       ↓               ",
         "     Target: 7         ",
         "       ↓               ",
-        "   🎯 FIND ME! 🎯      ",
+        "   --- FIND ME! ---    ",
       ],
       dialogue: ["I hide in sorted arrays!", "Can you find me efficiently?", "Linear search is too slow for my taste!"],
     },
@@ -358,10 +358,10 @@ export default function TerminalGame() {
         setPlayerName(inputValue)
         setGameStarted(true)
         setGamePhase("exploring")
-        addLogWithEffect(`Welcome to crack'd Academy, ${inputValue}!`, "fire")
+        addLogWithEffect(`Welcome to crack'd, ${inputValue}!`, "fire")
         addLog("")
-        addLog("🏛️  You enter the grand coding academy...")
-        addLog("📚 Six powerful Code Bosses guard different algorithm realms!")
+        addLog("You enter the coding academy...")
+        addLog("Six powerful Code Bosses guard different algorithm realms...")
         addLog("")
         addLog("Commands:")
         addLog("• 'explore' - Find Code Bosses to challenge")
@@ -420,7 +420,7 @@ export default function TerminalGame() {
         if (input === "hint") {
           if (player.health >= 10) {
             setPlayer((prev) => ({ ...prev, health: prev.health - 10 }))
-            addLogWithEffect(`💡 Hint: ${currentChallenge.hint}`, "info")
+            addLogWithEffect(`Hint: ${currentChallenge.hint}`, "info")
             addLogWithEffect("(-10 health for hint)", "error")
           } else {
             addLogWithEffect("Not enough health for a hint!", "error")
@@ -439,7 +439,7 @@ export default function TerminalGame() {
             // Success!
             solveCodingChallenge()
           } else {
-            addLogWithEffect("❌ Incorrect approach. Try again or type 'hint'.", "error")
+            addLogWithEffect("Incorrect approach. Try again or type 'hint'.", "error")
             addLogWithEffect(`Keywords found: ${foundKeywords.join(", ") || "none"}`, "info")
           }
         }
@@ -462,10 +462,10 @@ export default function TerminalGame() {
     setGamePhase("challenge")
 
     addLog("")
-    addLogWithEffect("⚔️  CODING CHALLENGE INITIATED!", "fire")
+    addLogWithEffect("CODING CHALLENGE INITIATED!", "fire")
     addLog("═══════════════════════════════")
-    addLog(`📝 ${challenge.title}`)
-    addLog(`💡 ${challenge.description}`)
+    addLog(`Title: ${challenge.title}`)
+    addLog(`Description: ${challenge.description}`)
     addLog("")
     addLog("Commands:")
     addLog("• Type keywords from your solution approach")
@@ -494,7 +494,7 @@ export default function TerminalGame() {
     setCurrentBoss((prev) => (prev ? { ...prev, health: newBossHealth } : null))
 
     addLog("")
-    addLogWithEffect("🎉 CODING CHALLENGE SOLVED!", "success")
+    addLogWithEffect("CODING CHALLENGE SOLVED!", "success")
     addLogWithEffect(`Your solution deals ${damage} damage!`, "fire")
     addLogWithEffect(`+${xpGain} XP gained!`, "star")
     addLogWithEffect(`+${skillBoost} ${currentBoss.skillType} skill!`, "star")
@@ -539,7 +539,7 @@ export default function TerminalGame() {
     }))
 
     addLog("")
-    addLogWithEffect(`🎉 You defeated the ${currentBoss.name}!`, "success")
+    addLogWithEffect(`You defeated the ${currentBoss.name}!`, "success")
     addLogWithEffect(`+${xpGain} XP gained!`, "star")
 
     // Check for badges
@@ -568,7 +568,7 @@ export default function TerminalGame() {
       }))
 
       addLog("")
-      addLogWithEffect("🎊 LEVEL UP! 🎊", "fire")
+      addLogWithEffect("LEVEL UP!", "fire")
       addLogWithEffect(`You are now a ${newLevelName} coder!`, "star")
       addLogWithEffect("+25 Max Health!", "success")
     }
@@ -596,38 +596,38 @@ export default function TerminalGame() {
       }))
 
       newBadges.forEach((badge) => {
-        addLogWithEffect(`🎖️  New Badge: ${badge}!`, "star")
+        addLogWithEffect(`New Badge: ${badge}!`, "star")
       })
     }
   }
 
   const gameOver = () => {
     addLog("")
-    addLogWithEffect("💀 GAME OVER!", "error")
+    addLogWithEffect("GAME OVER!", "error")
     addLogWithEffect("Your coding journey ends here... for now.", "error")
     addLogWithEffect("Refresh the page to start a new adventure!", "info")
   }
 
   const showPlayerStats = () => {
     addLog("")
-    addLog("📊 CODING STATISTICS")
+    addLog("CODING STATISTICS")
     addLog("═══════════════════")
-    addLog(`👤 Name: ${player.name}`)
-    addLog(`🎯 Level: ${Math.floor(player.experience / 200) + 1} (${player.level})`)
-    addLog(`❤️  Health: ${player.health}/${player.maxHealth}`)
-    addLog(`⭐ Experience: ${player.experience}`)
-    addLog(`🧩 Problems Solved: ${player.solvedProblems}`)
+    addLog(`Name: ${player.name}`)
+    addLog(`Level: ${Math.floor(player.experience / 200) + 1} (${player.level})`)
+    addLog(`Health: ${player.health}/${player.maxHealth}`)
+    addLog(`Experience: ${player.experience}`)
+    addLog(`Problems Solved: ${player.solvedProblems}`)
     addLog("")
-    addLog("🛠️  CODING SKILLS:")
+    addLog("CODING SKILLS:")
     Object.entries(player.skills).forEach(([skill, level]) => {
       const skillName = skill.charAt(0).toUpperCase() + skill.slice(1)
       addLog(`   ${skillName}: ${level}`)
     })
     if (player.badges.length > 0) {
       addLog("")
-      addLog("🏆 BADGES:")
+      addLog("BADGES:")
       player.badges.forEach((badge) => {
-        addLog(`   🎖️  ${badge}`)
+        addLog(`   ${badge}`)
       })
     }
     addLog("")
@@ -635,18 +635,18 @@ export default function TerminalGame() {
 
   const showHelp = () => {
     addLog("")
-    addLog("📖 HELP & COMMANDS")
+    addLog("HELP & COMMANDS")
     addLog("═════════════════")
-    addLog("🏛️  Academy Commands:")
+    addLog("Academy Commands:")
     addLog("   • explore - Find Code Bosses to challenge")
     addLog("   • stats - View your coding statistics")
     addLog("")
-    addLog("⚔️  Battle Commands:")
+    addLog("Battle Commands:")
     addLog("   • attack - Direct algorithm attack")
     addLog("   • defend - Reduce incoming damage")
     addLog("   • code - Start a coding challenge")
     addLog("")
-    addLog("🧩 Challenge Commands:")
+    addLog("Challenge Commands:")
     addLog("   • [solution keywords] - Submit your approach")
     addLog("   • hint - Get a hint (costs health)")
     addLog("   • skip - Skip current challenge")
@@ -709,7 +709,7 @@ export default function TerminalGame() {
 
               <div className="mb-4">
                 <div className="flex justify-between text-xs text-green-400 mb-1">
-                  <span className="flex items-center gap-1">❤️ Health</span>
+                  <span className="flex items-center gap-1">Health</span>
                   <span>
                     {player.health}/{player.maxHealth}
                   </span>
@@ -738,7 +738,7 @@ export default function TerminalGame() {
 
               {/* Top Skills */}
               <div className="mb-4">
-                <h3 className="text-green-400 font-bold text-sm mb-2">🛠️ Top Skills</h3>
+                <h3 className="text-green-400 font-bold text-sm mb-2">Top Skills</h3>
                 <div className="grid grid-cols-1 gap-1">
                   {Object.entries(player.skills)
                     .sort(([, a], [, b]) => b - a)
@@ -780,8 +780,8 @@ export default function TerminalGame() {
               {/* Latest Badge */}
               {player.badges.length > 0 && (
                 <div className="mb-4">
-                  <h3 className="text-green-400 font-bold text-sm mb-2">🏆 Latest Badge</h3>
-                  <div className="text-yellow-400 text-xs">🎖️ {player.badges[player.badges.length - 1]}</div>
+                  <h3 className="text-green-400 font-bold text-sm mb-2">Latest Badge</h3>
+                  <div className="text-yellow-400 text-xs">{player.badges[player.badges.length - 1]}</div>
                 </div>
               )}
             </>
@@ -791,7 +791,7 @@ export default function TerminalGame() {
             <div className="mb-2 flex items-center gap-1">
               <Zap className="h-3 w-3" /> Phase: {gamePhase}
             </div>
-            <div>💡 Type 'help' for commands</div>
+            <div>Type 'help' for commands</div>
           </div>
         </div>
       </div>
