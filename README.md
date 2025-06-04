@@ -28,13 +28,14 @@ an interactive terminal based coding game that transforms algorithm practice int
 ## Setup
 
 1. Clone the repository:
+   
    ```bash
    git clone https://github.com/yourusername/crack-d.git
    ```
    ```bash
    cd crack-d
    ```
-2. Install dependencies:
+3. Install dependencies:
   ```bash
   npm install
   ```
