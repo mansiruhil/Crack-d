@@ -658,7 +658,6 @@ export default function TerminalGame() {
       <div className="flex items-center gap-2 mb-4">
         <Terminal className="h-6 w-6 text-green-400" />
         <h1 className="text-2xl font-bold text-green-400">crack'd</h1>
-        <span className="text-green-400 text-sm">- Coding Academy</span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
